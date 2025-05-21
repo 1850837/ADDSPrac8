@@ -154,7 +154,7 @@ class Heap {
         // TO BE IMPLEMENTED
         // Insert an element into the heap
         void insert(T element) {
-            heap->push(element);
+            heap.push(element);
             heapify(heap);
             return;
         }
@@ -162,14 +162,14 @@ class Heap {
         // TO BE IMPLEMENTED
         // Remove an element from the heap
         void remove(T value) {
-            for (int i = 0; i < heap->size(); i++){
+            for (int i = 0; i < heap.size(); i++){
                 if (heap[i] == value){
-                    heap[i] = heap->back();
+                    heap[i] = heap.back();
                     i = heap.size();
                 }
             }
 
-            heap->pop_back();
+            heap.pop_back();
 
             heapify(heap);
 
