@@ -162,7 +162,7 @@ class Heap {
         // TO BE IMPLEMENTED
         // Remove an element from the heap
         void remove(T value) {
-            for int(i = 0; i < heap.size(); i++){
+            for (int i = 0; i < heap.size(); i++){
                 if (heap[i] == value){
                     heap[i] = heap.back();
                     i = heap.size();
